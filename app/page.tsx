@@ -10,10 +10,10 @@ export default function Home() {
     <main className="flex min-h-full flex-col items-center bg-neutral-3 px-8 py-[85px] tracking-[.007em] text-neutral-1">
       <header className="max-w-[540px]">
         <h1 className="flex flex-col items-center space-y-[1px] text-2xl lg:text-4xl">
-          <span className="py-[2px] font-extralight">
+          <span className="py-[2px] lg:py-1 font-extralight">
             Reliable, efficient delivery
           </span>
-          <span className="py-[2px] font-bold">Powered by Technology</span>
+          <span className="py-[2px] lg:py-1 font-bold">Powered by Technology</span>
         </h1>
         <p className="font-regular mt-4 text-center text-[.938rem] leading-[1.667em] opacity-50">
           Our Artificial Intelligence powered tools use millions of project data
