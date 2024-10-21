@@ -10,17 +10,19 @@ export default function Home() {
     <main className="flex min-h-full flex-col items-center bg-neutral-3 px-8 py-[85px] tracking-[.007em] text-neutral-1">
       <header className="max-w-[540px]">
         <h1 className="flex flex-col items-center space-y-[1px] text-2xl lg:text-4xl">
-          <span className="py-[2px] lg:py-1 font-extralight">
+          <span className="py-[2px] font-extralight lg:py-1">
             Reliable, efficient delivery
           </span>
-          <span className="py-[2px] lg:py-1 font-bold">Powered by Technology</span>
+          <span className="py-[2px] font-bold lg:py-1">
+            Powered by Technology
+          </span>
         </h1>
         <p className="font-regular mt-4 text-center text-[.938rem] leading-[1.667em] opacity-50">
           Our Artificial Intelligence powered tools use millions of project data
           points to ensure that your project is successful
         </p>
       </header>
-      <section className="mt-[76px] lg:mt-16 grid max-w-[1110px] grid-cols-1 gap-6 self-center lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr_1fr_1fr]">
+      <section className="mt-[76px] grid max-w-[1110px] grid-cols-1 gap-6 self-center lg:mt-16 lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr_1fr_1fr] lg:gap-[30px]">
         <Card
           title="Supervisor"
           description="Monitors activity to identify project roadblocks"
@@ -70,15 +72,15 @@ function Card({
   className: string;
 }) {
   return (
-    <div className={twMerge("bg-white rounded-lg", className)}>
+    <div className={twMerge("rounded-lg bg-white", className)}>
       <div
-        className={`flex flex-col items-start rounded-lg bg-line bg-gradient-to-r bg-no-repeat p-7 lg:p-8 shadow`}
+        className={`bg-line flex flex-col items-start rounded-lg bg-gradient-to-r bg-no-repeat p-7 shadow lg:p-8`}
       >
         <h2 className="text-xl font-semibold">{title}</h2>
-        <p className="mt-1 lg:mt-2 pl-[1px] text-[.813rem] leading-[1.769em] opacity-50">
+        <p className="mt-1 pl-[1px] text-[.813rem] leading-[1.769em] opacity-50 lg:mt-2">
           {description}
         </p>
-        <div className="mt-[31px] h-[57px] w-[57px] lg:mt-10 lg:w-16 lg:h-16 self-end">
+        <div className="mt-[31px] h-[57px] w-[57px] self-end lg:mt-10 lg:h-16 lg:w-16">
           <Image src={img} alt={`${title} icon`} />
         </div>
       </div>
