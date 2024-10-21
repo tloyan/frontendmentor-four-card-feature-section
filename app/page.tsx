@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex min-h-full flex-col items-center bg-neutral-3 px-8 py-[85px] tracking-[.007em] text-neutral-1">
       <header className="max-w-[540px]">
-        <h1 className="flex flex-col items-center space-y-[1px] text-2xl md:text-4xl">
+        <h1 className="flex flex-col items-center space-y-[1px] text-2xl lg:text-4xl">
           <span className="py-[2px] font-extralight">
             Reliable, efficient delivery
           </span>
@@ -20,13 +20,13 @@ export default function Home() {
           points to ensure that your project is successful
         </p>
       </header>
-      <section className="mt-20 grid max-w-[1110px] grid-cols-1 gap-6 self-center md:grid-cols-[1fr_1fr_1fr] md:grid-rows-[1fr_1fr_1fr_1fr]">
+      <section className="mt-20 grid max-w-[1110px] grid-cols-1 gap-6 self-center lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr_1fr_1fr]">
         <Card
           title="Supervisor"
           description="Monitors activity to identify project roadblocks"
           img={iconSupervisor}
           className={
-            "from-primary-2 to-primary-2 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-4"
+            "from-primary-2 to-primary-2 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-4"
           }
         />
         <Card
@@ -34,7 +34,7 @@ export default function Home() {
           description="Scans our talent network to create the optimal team for your project"
           img={iconTeamBuilder}
           className={
-            "from-primary-1 to-primary-1 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-3"
+            "from-primary-1 to-primary-1 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3"
           }
         />
         <Card
@@ -42,7 +42,7 @@ export default function Home() {
           description="Regularly evaluates our talent to ensure quality"
           img={iconKarma}
           className={
-            "from-primary-3 to-primary-3 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-5"
+            "from-primary-3 to-primary-3 lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-5"
           }
         />
         <Card
@@ -50,7 +50,7 @@ export default function Home() {
           description="Uses data from past projects to provide better delivery estimates"
           img={iconCalculator}
           className={
-            "from-primary-4 to-primary-4 md:col-start-3 md:col-end-4 md:row-start-2 md:row-end-4"
+            "from-primary-4 to-primary-4 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-4"
           }
         />
       </section>
@@ -72,15 +72,15 @@ function Card({
   return (
     <div
       className={twMerge(
-        `flex flex-col items-start rounded-lg bg-white bg-line bg-gradient-to-r bg-no-repeat p-7 shadow`,
+        `flex flex-col items-start rounded-lg bg-white bg-line bg-gradient-to-r bg-no-repeat p-7 lg:p-8 shadow`,
         className,
       )}
     >
       <h2 className="text-xl font-semibold">{title}</h2>
-      <p className="mt-1 pl-[1px] text-[.813rem] leading-[1.769em] opacity-50">
+      <p className="mt-1 lg:mt-2 pl-[1px] text-[.813rem] leading-[1.769em] opacity-50">
         {description}
       </p>
-      <div className="mt-[31px] h-[57px] w-[57px] self-end">
+      <div className="mt-[31px] h-[57px] w-[57px] lg:mt-10 lg:w-16 lg:h-16 self-end">
         <Image src={img} alt={`${title} icon`} />
       </div>
     </div>
