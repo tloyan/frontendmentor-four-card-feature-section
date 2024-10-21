@@ -70,18 +70,17 @@ function Card({
   className: string;
 }) {
   return (
-    <div
-      className={twMerge(
-        `flex flex-col items-start rounded-lg bg-white bg-line bg-gradient-to-r bg-no-repeat p-7 lg:p-8 shadow`,
-        className,
-      )}
-    >
-      <h2 className="text-xl font-semibold">{title}</h2>
-      <p className="mt-1 lg:mt-2 pl-[1px] text-[.813rem] leading-[1.769em] opacity-50">
-        {description}
-      </p>
-      <div className="mt-[31px] h-[57px] w-[57px] lg:mt-10 lg:w-16 lg:h-16 self-end">
-        <Image src={img} alt={`${title} icon`} />
+    <div className={twMerge("bg-white rounded-lg", className)}>
+      <div
+        className={`flex flex-col items-start rounded-lg bg-line bg-gradient-to-r bg-no-repeat p-7 lg:p-8 shadow`}
+      >
+        <h2 className="text-xl font-semibold">{title}</h2>
+        <p className="mt-1 lg:mt-2 pl-[1px] text-[.813rem] leading-[1.769em] opacity-50">
+          {description}
+        </p>
+        <div className="mt-[31px] h-[57px] w-[57px] lg:mt-10 lg:w-16 lg:h-16 self-end">
+          <Image src={img} alt={`${title} icon`} />
+        </div>
       </div>
     </div>
   );
