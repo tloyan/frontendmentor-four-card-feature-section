@@ -20,7 +20,7 @@ export default function Home() {
           points to ensure that your project is successful
         </p>
       </header>
-      <section className="mt-20 grid max-w-[1110px] grid-cols-1 gap-6 self-center lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr_1fr_1fr]">
+      <section className="mt-[76px] lg:mt-16 grid max-w-[1110px] grid-cols-1 gap-6 self-center lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr_1fr_1fr]">
         <Card
           title="Supervisor"
           description="Monitors activity to identify project roadblocks"
