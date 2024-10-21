@@ -23,6 +23,12 @@ const config: Config = {
       },
       fontFamily: {
         sans: "var(--font-poppins)"
+      },
+      boxShadow: {
+        DEFAULT: "0 15px 30px -11px rgba(131,166,210,50%)"
+      },
+      backgroundSize: {
+        "line": "100% .219rem"
       }
     },
   },
